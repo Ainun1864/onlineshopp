@@ -1,0 +1,203 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #b3ff00;
+    color: #0f0f0f;
+}
+
+/* headler */
+.hero {
+    height: 45vh;
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    background-image:
+        linear-gradient(
+            rgba(202, 0, 0, 0.4),
+            rgba(145, 255, 0, 0.6)
+        ),
+        url("ijhb.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero-text {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-text h1 {
+    font-size: 70px;
+    margin: 0;
+    color: white;
+}
+
+.hero-text p {
+    margin: 15px 0;
+    color: white;
+}
+
+.hero button {
+    background: #9c0000;
+    border: none;
+    padding: 12px 20px;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* container */
+.container {
+    padding: 60px;
+}
+
+h2 {
+    margin-bottom: 30px;
+}
+
+/* grid produk */
+.produk-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+/* card */
+.card {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card h3 {
+    margin: 15px 0 5px;
+}
+
+.harga {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.card input[type="number"] {
+    width: 60px;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+.card-bottom {
+    margin-top: 15px;
+}
+
+/* ================= CARD AKSI ================= */
+.card-aksi {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-aksi a {
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+    color: white;
+}
+
+.btn-ubah {
+    background: #549c01;
+}
+
+.btn-hapus {
+    background: #9c0000;
+}
+
+/* ================= CHECKOUT ================= */
+.checkout {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.checkout button {
+    background: #770000;
+    border: none;
+    padding: 14px 30px;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* ================= FORM ================= */
+.form-container {
+    padding: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+.form-card {
+    background: white;
+    padding: 30px;
+    width: 400px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.form-card h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-card label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.form-card input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+/* ================= BUTTON TAMBAH PRODUK ================= */
+.btn-tambah {
+    margin-top: 20px;
+    width: 100%;
+    padding: 12px;
+    background: #ff6b00;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.btn-tambah:hover {
+    background: #cc5500;
+    transform: translateY(-2px);
+}
+
+/* ================= BACK BUTTON ================= */
+.back-btn {
+    display: block;
+    margin-top: 15px;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+}
